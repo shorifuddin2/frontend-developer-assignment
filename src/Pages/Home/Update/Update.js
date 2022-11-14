@@ -15,7 +15,7 @@ const Update = () => {
         title: data.title,
         img: data.img,
         }
-        fetch(`http://localhost:5000/service/${id}`,{
+        fetch(`https://service-4bth.onrender.com/service/${id}`,{
             method: 'PUT',
             headers:{'content-type':'application/json'},
             body: JSON.stringify(service)
@@ -31,7 +31,7 @@ const Update = () => {
 
     const [isReload, ]= useState(false)
     useEffect(() => {
-        const url = `http://localhost:5000/service/${id}`;
+        const url = `https://service-4bth.onrender.com/service/${id}`;
         console.log(url)
         fetch(url)
         .then(res => res.json())

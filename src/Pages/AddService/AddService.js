@@ -7,7 +7,7 @@ const AddService = () => {
     
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/service/`;
+        const url = `https://service-4bth.onrender.com/service/`;
         fetch(url, {
             method: 'POST',
             headers: {

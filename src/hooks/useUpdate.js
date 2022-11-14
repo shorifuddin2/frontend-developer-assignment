@@ -4,7 +4,7 @@ const useUpdate = id =>{
     const [edit, setEdit] =  useState({});
     useEffect(() => {
         
-        const url =`http://localhost:5000/service/${id}`;
+        const url =`https://service-4bth.onrender.com/service/${id}`;
         fetch(url)
         console.log(url)
         .then(res => res.json())

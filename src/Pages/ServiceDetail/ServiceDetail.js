@@ -6,7 +6,7 @@ const ServiceDetail = () => {
     const [service, setServices] = useState({});
 
     useEffect( () =>{
-        const url = `http://localhost:5000/service${_id}`;
+        const url = `https://service-4bth.onrender.com/service${_id}`;
         console.log(url);
         fetch(url)
         .then(res=> res.json())
